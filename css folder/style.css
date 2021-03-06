@@ -1,0 +1,14 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.bank{
+	width: 200px;
+	height: 200px;
+	opacity: 0.7;
+}
+.logo{
+	padding: 30px;
+}
