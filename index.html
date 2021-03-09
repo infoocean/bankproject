@@ -18,12 +18,36 @@
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container-fluid">
-    <marquee><h1 style="color: red;"><b><i>Welcome To Rewa Bank</i></b></h1></marquee>
-      <!--heqader part start-->
+    <!--upper par startt-->
+    <div class="row">
+      <div class="col-lg-3 text-center">
+        <apan style="font-family: century-gothic; font-size: 25px;"><b>EMI Calculate </b></span><a href="calculate emi/emi.php"><i class="fas fa-calculator fa-1x"></i></a>
+      </div>
+       <div class="col-lg-6">
+            <marquee  behavior="alternate"><h2 style="color: red;"><b><i>Welcome To Rewa Bank</i></b></h2></marquee>
+      </div>
+       <div class="col-lg-3 text-center">
+        <form action="apply/apply.php" method="POST">
+          <select name="forapply">
+               <option>Apply for</option>
+               <option>Open Account </option>
+               <option>Taken Loan</option>
+               <option>Ballance Enquery</option>
+                <option>Fix Deposite</option>
+                <option>Investment</option>
+                <option>Other</option>
+          </select>
+          <input type="submit" name="apply" value="apply" class="btn btn-primary">
+        </form>
+      </div>
+    </div>
+    <!--upper part end-->
+
+      <!--heqader navbar first part start-->
       <header class="container-fluid">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
          <div class="container">
-          <a href="#" class="navbar-brand" style="font-size: 25px; font-weight: bold;">REWA BANK
+          <a href="index.html" class="navbar-brand" style="font-size: 25px; font-weight: bold;">REWA BANK
           </a>
           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
           <span class="navbar-toggler-icon"></span>
@@ -31,10 +55,10 @@
             <div class="collapse navbar-collapse" id="navbarid">
               <ul class="navbar-nav text-center ml-auto">
                 <li class="nav-item">
-                  <a href="#" class="nav-link active">Home</a>
+                  <a href="index.php" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
-                 <a href="#" class="nav-link">About</a>
+                 <a href="about/about.php" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
                  <a href="#" class="nav-link" data-target="#mymodal" data-toggle="modal">Contact Me</a>
@@ -49,7 +73,7 @@
                             </div>
                             <div class="modal-body">
                           <!--contact us form start-->    
-                            <form action="#" method="post">
+                            <form action="contact/contact.php" method="POST">
                                 <div class="form-group">
                                   <label for="name" style="font-size: 18px; font-weight: bold;">Name:</label>
                                   <input type="text" name="name" value="" required="name" placeholder="name" class="form-control">
@@ -92,51 +116,52 @@
                      </a>
                      <div class="dropdown">
                       <ul class="dropdown-menu text-left" style="line-height: 30px;">
-                        <li class="dropdown-item"><a href="#">Personal Loan</a></li>
-                        <li class="dropdown-item"><a href="#">Home Loan</a></li>
-                        <li class="dropdown-item"><a href="#">Gold Loan</a></li>
-                        <li class="dropdown-item"><a href="#">Education Loan</a></li>
-                        <li class="dropdown-item"><a href="#">Car Loan</a></li>
-                        <li class="dropdown-item"><a href="#">Business Loan</a></li>
-                        <li class="dropdown-item"><a href="#">Investment</a></li>
+                        <li class="dropdown-item"><a href="loan/personalloan.php">Personal Loan</a></li>
+                        <li class="dropdown-item"><a href="loan/homeloan.php">Home Loan</a></li>
+                        <li class="dropdown-item"><a href="loan/goldloan.php">Gold Loan</a></li>
+                        <li class="dropdown-item"><a href="loan/educationloan.php">Education Loan</a></li>
+                        <li class="dropdown-item"><a href="loan/carloan.php">Car Loan</a></li>
+                        <li class="dropdown-item"><a href="loan/businessloan.php">Business Loan</a></li>
+                        <li class="dropdown-item"><a href="investment/investment.php">Investment</a></li>
                       </ul>
                      </div>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Open Account
+                      <a href="open account registration form/openaccount.php" class="nav-link dropdown-toggle" data-toggle="dropdown">Open Account
                       </a>
                       <div class="dropdown">
                         <ul class="dropdown-menu text-left" style="line-height: 30px;">
-                         <li class="dropdown-item"><a href="#">Current Account</a></li>
-                         <li class="dropdown-item"><a href="#">Saving Account</a></li>
-                         <li class="dropdown-item"><a href="#">Fix Deposite Account</a></li>
+                         <li class="dropdown-item"><a href="open account registration form/openaccount.php">Current Account</a></li>
+                         <li class="dropdown-item"><a href="open account registration form/openaccount.php">Saving Account</a></li>
+                         <li class="dropdown-item"><a href="open account registration form/openaccount.php">Fix Deposite Account</a></li>
                         </ul>
                       </div>
                     </li>
                      <li class="nav-item dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Customer Services
+                      <a href="services/services.php" class="nav-link dropdown-toggle" data-toggle="dropdown">Customer Services
                       </a>
                       <div class="dropdown">
                       <ul class="dropdown-menu text-left" style="line-height: 30px;">
-                        <li class="dropdown-item"><a href="#">Open Account</a></li>
-                        <li class="dropdown-item"><a href="#">Ballance Enquery</a></li>
-                        <li class="dropdown-item"><a href="#">Transefer Money</a></li>
-                        <li class="dropdown-item"><a href="#">Withdrown Money </a></li>
-                        <li class="dropdown-item"><a href="#">Account Details</a></li>
-                        <li class="dropdown-item"><a href="#">Direct NEFT</a></li>
-                         <li class="dropdown-item"><a href="#">EMI Calculate</a></li>
+                        <li class="dropdown-item"><a href="open account registration form/openaccount.php">Open Account</a></li>
+                        <li class="dropdown-item"><a href="services/ballance.php">Ballance Enquery</a></li>
+                        <li class="dropdown-item"><a href="services/moneytransfer.php">Transefer Money</a></li>
+                        <li class="dropdown-item"><a href="services/withdrow.php">Withdrown Money </a></li>
+                        <li class="dropdown-item"><a href="services/addmoney.php">Add Money</a></li>
+                        <li class="dropdown-item"><a href="fetch data/selectdata.php">Account Details</a></li>
+                        <li class="dropdown-item"><a href="services/neft.php">Direct NEFT</a></li>
+                         <li class="dropdown-item"><a href="calculate EMI/emi.php">EMI Calculate</a></li>
                       </ul>
                      </div>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Investment
+                      <a href="investment/investment.php" class="nav-link dropdown-toggle" data-toggle="dropdown">Investment
                       </a>
                         <div class="dropdown">
                         <ul class="dropdown-menu text-left" style="line-height: 30px;">
-                        <li class="dropdown-item"><a href="#">Invest in paytm</a></li>
-                        <li class="dropdown-item"><a href="#">Invest in amazone</a></li>
-                        <li class="dropdown-item"><a href="#">Invest in Flipcart</a></li>
-                        <li class="dropdown-item"><a href="#">Invest snapdeal</a></li>
+                        <li class="dropdown-item"><a href="investment/paytm.php">Invest in paytm</a></li>
+                        <li class="dropdown-item"><a href="investment/amazon.php">Invest in amazone</a></li>
+                        <li class="dropdown-item"><a href="investment/flipcard.php">Invest in Flipcart</a></li>
+                        <li class="dropdown-item"><a href="investment/snapdeal.php">Invest snapdeal</a></li>
                       </ul>
                      </div>
                     </li>
@@ -147,20 +172,24 @@
        </div>
       </nav>
    </header>
-   <!--header part end-->
+   <!--header navbar first part end-->
+
+    <!--header navbar second  part start-->
     <div class="row">
+      <!--logo part-->
      <div class="col-lg-3">
         <div class="logo">
           <img src="image folder/logo.jpeg" class="img-thumbnail rounded-circle" style="width: 200px ; height: 200px;">
         </div>
      </div>
+     <!--main header part -->
      <div class="col-lg-7">
        <nav class="navbar navbar-expand-lg">
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-           <a class="navbar-brand" href="#">Open Account</a>
+           <a class="navbar-brand" href="open account registration form/openaccount.php">Open Account</a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Apply<span class="sr-only">(current)</span></a>
@@ -171,7 +200,9 @@
                         <li class="dropdown-item"><a href="#">Investment</a></li>
                         <li class="dropdown-item"><a href="#">Debit Card</a></li>
                         <li class="dropdown-item"><a href="#">Credit Card</a></li>
-                        <li class="dropdown-item"><a href="#">Ballance</a></li>
+                        <li class="dropdown-item"><a href="services/ballance.php">Ballance</a></li>
+                        <li class="dropdown-item"><a href="services/addmoney.php">Add Money</a></li>
+                        <li class="dropdown-item"><a href="services/withdrow.php">withdrow money</a></li>
                         <li class="dropdown-item"><a href="#">Jobs</a></li>
                       </ul>
                      </div>
@@ -190,9 +221,11 @@
              <div class="dropdown">
                       <ul class="dropdown-menu text-left" style="line-height: 30px;">
                         <li class="dropdown-item"><a href="#">Loan</a></li>
-                        <li class="dropdown-item"><a href="#">Amount</a></li>
+                        <li class="dropdown-item"><a href="services/ballance.php">Amount</a></li>
+                        <li class="dropdown-item"><a href="services/addmoney.php">Add Money</a></li>
+                        <li class="dropdown-item"><a href="services/withdrow.php">withdrow money</a></li>
                         <li class="dropdown-item"><a href="#">Statement</a></li>
-                        <li class="dropdown-item"><a href="#">New account</a></li>
+                        <li class="dropdown-item"><a href="open account registration form/openaccount.php">New account</a></li>
                         <li class="dropdown-item"><a href="#">Card</a></li>
                         <li class="dropdown-item"><a href="#">Old Account</a></li>
                         <li class="dropdown-item"><a href="#">Investment</a></li>
@@ -206,6 +239,7 @@
         </form>
       </div>
        </nav>
+       <!--carousel image slider part-->
        <div class="carousel" style="padding-top: 20px;">
          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
            <ol class="carousel-indicators">
@@ -220,13 +254,13 @@
                    <h5 style="color: black;"><b>Founder:- Shubham Kumar Jaiswal</b></h5>
                    <p style="color: black;">This bank is the best helpfull for the anywhere or anytime</p>
                    <span style="font-size: 25px;">Apply for Any Enquery </span><a href="#" style="font-size: 20px; color: darkblue"> click<b></b></a>
-                </div>
-    </div>
+              </div>
+       </div>
     <div class="carousel-item">
       <img class="d-block w-100 bank" src="image folder/bankpic2.jpg" alt="Second slide">
        <div class="carousel-caption d-none d-md-block">
-                   <h5><b style="color: blue;">here all the my Teams</b></h5>
-                </div>
+          <h5><b style="color: blue;">here all the my Teams</b></h5>
+       </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100 bank" src="image folder/bankpic3.jpg" alt="Third slide">
@@ -240,12 +274,13 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div> 
-       </div>
-     </div>
+   </div> 
+  </div>
+</div>
+<!--registration part login part-->
        <div class="col-lg-2">
         <div class="text-center">
-          <i class="fas fa-user-tie 5x"></i><a href="#"> <b>Shubham </b></a>
+          <i class="fas fa-user-tie fa-2x"></i><a href="#"> <b></b></a>
         </div>
         <div class="linl text-center">
          <span><a href="#">Login/</a></span><span><a href="#">Signup</a></span>
@@ -255,7 +290,7 @@
             <img class="card-img-top img-thumbnail" style="width: 100%; height:150px;" src="image folder/author.jpg" alt="Card image cap">
               <div class="card-body">
                  <p style="font-size: 12px;" class="card-title">Founder:- Shubham</p>
-                  <a href="#" class="card-link">Founder:- About </a>
+                  <a href="https://infoocean.github.io/mywebsite.github.io/" class="card-link">Founder:- About </a>
               </div>
           </div>
         </div>
@@ -263,6 +298,18 @@
     </div>
   </div>
 </div>
+<!--footer part -->
+<footer>
+  <div class="container-fluid text-center" style="height: 70px; background-color: black;">
+     <span style="color: white;"> Follow Here : -  </span><br>
+     <a href="#"><i class="fab fa-facebook "> </i></a>
+       <a href="#"><i class="fab fa-twitter "> </i></a>
+         <a href="#"><i class="fab fa-google "> </i></a>
+           <a href="#"><i class="fab fa-whatsapp"> </i></a>
+     <br>
+    <span style="color: red; font-size: 15px;">copyright@2021-----Shubham Kumar Jaiswal </span>
+  </div>
+</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
